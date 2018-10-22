@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
     
-    @IBOutlet weak var datepicker: UIDatePicker!
+    @IBOutlet weak var txtPhoneNumber: UITextField!
     
+    @IBOutlet weak var datepicker: UIDatePicker!
     
     @IBAction func btnSave(_ sender: UIButton) {
         let defaults: UserDefaults = UserDefaults.standard
         defaults.set(self.txtFullName.text, forKey: "fullname")
         defaults.set(self.txtEmail.text, forKey: "email")
+        defaults.set(self.txtPhoneNumber.text, forKey: "phonenumber")
           let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, yyyy" //Your New Date format as per requirement change it own
         let newDate = dateFormatter.string(from:datepicker.date) //pass Date here
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
     {
         txtEmail.resignFirstResponder()
         txtFullName.resignFirstResponder()
+        txtPhoneNumber.resignFirstResponder()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,9 @@ class ViewController: UIViewController {
         }
         if defaults.string(forKey: "email") != nil{
             txtEmail.text = defaults.string(forKey: "email")
+        }
+        if defaults.string(forKey: "phonenumber") != nil{
+            txtPhoneNumber.text = defaults.string(forKey: "phonenumber")
         }
         if defaults.string(forKey: "bdate") != nil{
             let bdate  = defaults.string(forKey: "bdate")

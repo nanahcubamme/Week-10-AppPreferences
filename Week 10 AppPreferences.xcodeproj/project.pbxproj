@@ -275,7 +275,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LAK6SGQ7Q5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Week 10 AppPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.RockValleyCollege.Week-10-AppPreferences";
@@ -290,7 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LAK6SGQ7Q5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Week 10 AppPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.RockValleyCollege.Week-10-AppPreferences";
